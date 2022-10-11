@@ -11,7 +11,7 @@
 
 <body>
     <div class="container d-flex justify-content-center align-items-center" style="height: 100vh ;">
-        <form class="border shadow p-3 rounded" style="width: 450px;">
+        <form class="border shadow p-3 rounded" style="width: 450px;" method="POST" action="auth/check-login.php">
             <h1 class="text-center">Login</h1>
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
@@ -23,7 +23,7 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Select user type :</label>
-                <select class="form-select mb-3" aria-label="Default select example">
+                <select name="role" class="form-select mb-3" aria-label="Default select example">
                     <option value="admin">Admin</option>
                     <option value="dosen">Dosen</option>
                     <option value="mhs">Mahasiswa</option>
